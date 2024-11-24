@@ -179,7 +179,7 @@ main {
   padding: 20px;
 }
 
-#video1 {
+.video {
   color: white;
   display: flex;
   flex-direction: column;
@@ -193,25 +193,8 @@ main {
   gap: 10px;
 }
 
-#video2 {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-  background-color: #051312dd;
-  border-style: solid;
-  border-radius: 20px;
-  padding: 10px;
-  gap: 10px;
-}
 
 .redes-sociais {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
 }
 
