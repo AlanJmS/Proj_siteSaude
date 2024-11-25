@@ -97,7 +97,7 @@ main {
   margin-top: 50px;
 }
 
-#textos {
+#textos_apresent {
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -123,13 +123,13 @@ main {
   width: 450px;
 }
 
-#textos2 {
+#textos_introd {
   margin-top: 15px;
   justify-items: center;
   padding: 10px;
 }
 
-#textos4 {
+#textos_habitos {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -158,7 +158,7 @@ main {
   border-top: groove;
 }
 
-#textos5 {
+#textos_mental1 {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -172,7 +172,7 @@ main {
   height: 200px;
 }
 
-#textos6 {
+#textos_mental2 {
   display: flex;
   margin-top: 20px;
   padding: 20px;
@@ -192,6 +192,103 @@ main {
   gap: 10px;
 }
 
+#mitos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: groove;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+#mitos img {
+  width: 300px;
+  height: 170px;
+}
+
+#intro_mitos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  gap: 20px;
+}
+
+#textos_mitos{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+#textos_mitos ol {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  padding: 10px;
+  list-style-type: none;
+  border-style: solid;
+}
+
+
+#mitos_respostas {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 10px;
+  color: rgb(132, 3, 3);
+  font-weight: bold;
+  gap: 10px;
+}
+#verdades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#textos_verdades {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  gap: 10px;
+}
+
+#textos_verdades ol {
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  padding: 10px;
+  list-style-type: none;
+  border-style: solid;
+}
+
+#verdades_respostas {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-top: 10px;
+  color: rgb(1, 84, 1);
+  font-weight: bold;
+  gap: 10px;
+}
+
+ol li {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-right: 2px solid;
+  padding: 10px;
+}
+
+ol li:last-child {
+  border-right: none;
+}
+
 .redes-sociais {
   gap: 10px;
 }
@@ -199,9 +296,9 @@ main {
 #contato {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  padding: 40px;
   gap: 30px;
   color: white;
   background-color: rgb(0, 11, 88);
@@ -224,7 +321,6 @@ main {
 }
 
 @media screen and (min-width: 769px) and (max-width: 1279px) {
-
 }
 
 @media screen and (min-width: 1280px) {
