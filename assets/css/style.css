@@ -4,35 +4,35 @@
   box-sizing: border-box;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 body {
-  font-family: raleway;
   width: 100%;
   height: 100%;
-  
+  font-family: PT Serif;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
+  padding-top: 20px;
   padding-left: 90px;
   padding-right: 90px;
   padding-bottom: 20px;
 }
 
+p {
+  text-align: justify;
+}
 
 #naveg {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
-  background-color: rgb(0, 11, 88);
-}
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  background-color: rgba(13, 24, 105, 0.89);
 }
 
 #div-links {
@@ -62,9 +62,7 @@ header {
 }
 
 #pesquisa {
-  size: 30;
   padding: 10px;
-  width: 250px;
   height: 30px;
   border-radius: 30px;
 }
@@ -75,7 +73,7 @@ header {
   border-style: solid;
   border-color: white;
   color: white;
-  background-color:rgb(0, 11, 88);
+  background-color: rgb(0, 11, 88);
 }
 
 #envio:hover {
@@ -85,49 +83,62 @@ header {
 
 #inicio {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-bottom-style: solid;
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #textos_apresent {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   margin-left: 20px;
+}
+
+#textos_apresent h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#textos_introd {
+  justify-items: center;
+}
+
+#textos_introd h1,
+p {
+  margin-bottom: 25px;
 }
 
 #alimentacao {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   margin-left: 20px;
+}
+
+#alimentacao ul li {
+  text-align: justify;
+  padding: 5px;
+  margin-right: 20px;
 }
 
 #praticas {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-
-#textos_introd {
-  margin-top: 15px;
-  justify-items: center;
-  padding: 10px;
 }
 
 #textos_habitos {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  gap: 20px;
-  margin-left: 20px;
   align-items: center;
+  padding-bottom: 20px;
+}
+
+#textos_habitos ul li {
+  text-align: justify;
+  padding: 5px;
+  margin-left: 20px;
 }
 
 #habitos {
@@ -135,7 +146,6 @@ header {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  border-bottom-style: solid;
 }
 
 #saudeMental {
@@ -143,7 +153,6 @@ header {
   margin-top: 40px;
   justify-content: space-between;
   align-items: center;
-  border-top: solid;
 }
 
 #textos_mental1 {
@@ -160,26 +169,55 @@ header {
   margin-top: 20px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+}
+
 .video {
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-  background-color: black;
-  border-style: solid;
-  border-radius: 20px;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
   gap: 20px;
+}
+
+.mini-perfil {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: justify;
+  gap: 10px;
+  padding: 10px;
+}
+
+.mini-perfil p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.sociais{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
 
 #mitos {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: solid;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
   margin-top: 20px;
 }
@@ -187,20 +225,30 @@ header {
 #intro_mitos {
   display: flex;
   flex-direction: column;
-  text-align: justify;
-  justify-content: center;
   align-items: center;
   margin-right: 10px;
   gap: 20px;
 }
 
-#textos_mitos {
+#mitos_perguntas {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#textos_mitos ol {
+#mitos_perguntas h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 0, 0);
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  background-color: black;
+  padding: 10px;
+}
+
+#mitos_perguntas ol {
   display: flex;
   flex-direction: row;
   font-weight: bolder;
@@ -215,7 +263,7 @@ header {
   align-items: start;
   justify-content: center;
   margin-top: 10px;
-  color: rgb(132, 3, 3);
+  color: rgb(176, 8, 8);
   font-weight: bold;
   gap: 10px;
   padding-bottom: 15px;
@@ -227,13 +275,25 @@ header {
   margin-top: 10px;
 }
 
-#textos_verdades {
+#verdades_perguntas {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-#textos_verdades ol {
+#verdades_perguntas h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(2, 237, 2);
+  border-style: solid;
+  border-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: black;
+}
+
+#verdades_perguntas ol {
   display: flex;
   flex-direction: row;
   font-weight: bolder;
@@ -266,44 +326,44 @@ ol li:last-child {
   border-right: none;
 }
 
-p {
+#contato {
+  padding: 35px;
+}
+#contato h2 {
   text-align: justify;
+  padding-bottom: 10px;
 }
-.redes-sociais {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-#contato form{
+#contato form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   border-style: solid;
-  box-shadow: black 8px 16px 8px;
+  box-shadow: black 10px 16px 30px;
   padding: 10px;
 }
 
 #contato form input,
 #contato form select,
 #contato form textarea,
-#contato form button{
-border-width: 3px;
-border-color: black;
-padding: 10px;
+#contato form button {
+  border-width: 2px;
+  border-color: black;
+  padding: 10px;
 }
 
-#contato form label{
+#contato form label {
   font-weight: bolder;
-  font-family: raleway;
 }
 
-#contato form button{
-  color:white;
+#contato form button {
+  color: white;
   background-color: black;
-  
 }
 
+#contato form button:hover {
+  color: black;
+  background-color: white;
+}
 
 footer {
   display: flex;
@@ -327,15 +387,18 @@ footer a {
   color: white;
 }
 
-#redes_foot{
+footer a:hover {
+  color: black;
+}
+
+#redes_foot {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  gap: 10px
+  gap: 10px;
 }
 
-#redes_foot a{
+#redes_foot a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,7 +410,56 @@ footer a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-size: xx-large;
   }
+
+  body img{
+    min-width: 100%;
+    height: auto;
+
+  }
+
+  #inicio {
+    flex-direction: column;
+  }
+
+  #textos_introd{
+    flex-direction: column;
+  }
+
+  #praticas{
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+
+  #alimentacao{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
+  #praticas {
+    flex-direction: column;
+  }
+
+ #habitos{
+  flex-direction: column-reverse;
+ }
+
+#saudeMental{
+  flex-direction: column;
+} 
+
+.container{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#mitos{
+  flex-direction: column;
+}
+
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -355,5 +467,6 @@ footer a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-size: medium;
   }
 }
