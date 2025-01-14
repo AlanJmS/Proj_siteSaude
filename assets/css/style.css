@@ -16,6 +16,7 @@ body {
   width: 100%; /* Ajusta o elemento pra ocupar 100% da largura de onde ele está inserido */
   height: 100%; /* Ajusta o elemento pra ocupar 100% da altura de onde ele está inserido */
   font-family: PT Serif; /* Aplica uma fonte no corpo do site */
+
 }
 
 main { 
@@ -404,6 +405,12 @@ p {
   background-color: white; /* Transforma a cor de fundo do elemento para branco */
 }
 
+#resultForm h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* FINAL DA SEÇÃO DE CONTATO DO SITE */
 
 /*----------------------------------------------------------------------*/
@@ -498,6 +505,10 @@ footer a:hover {
     flex-direction: column; /* Organiza os itens de um container flexível em uma coluna, alinhando-os verticalmente. */
   }
 }
+
+
+
+
 
 @media screen and (min-width: 481px) and (max-width: 768px) { /*Ajusta o conteúdo do site a partir da resolução de 481px até 768px */
   body {

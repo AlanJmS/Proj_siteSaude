@@ -14,20 +14,24 @@
   </head>
   <body>
     <header>
+
       <!--Barra de navegação-->
+
       <nav id="naveg">
         <div>
+          <a href="index.html">
           <img
             id="logotipo"
             src="assets/imagens/xsonho-de-ter-plano-de-saude.png.pagespeed.ic_.ChCKlfCICv.png"
             alt="Imagem de ícones ilustrando temas sobre saúde e bem estar"
-            width="120px"
+            width="100px"
           />
+        </a>
         </div>
         <div id="div-links">
           <a class="link" href="#inicio">Início</a>
 
-          <a class="link" href="#textos_introd">Dicas sobre saúde</a>
+          <a class="link" href="#textos-introd">Dicas sobre saúde</a>
 
           <a class="link" href="#saudeMental">Saúde mental</a>
 
@@ -52,7 +56,9 @@
     </header>
     <main>
       <section>
+
         <!--Seção principal, contendo a apresentação do site e dicas de saúde-->
+
         <div id="inicio">
           <img
             src="assets/imagens/internasaudeOMS.png"
@@ -258,7 +264,9 @@
         </div>
       </section>
       <section>
+
         <!--Seção contendo o conteúdo relacionado a saúde mental-->
+
         <div id="saudeMental">
           <div id="textos_mental1">
             <h1>Qual a importância da saúde mental?</h1>
@@ -377,7 +385,9 @@
         </div>
       </section>
       <section>
+
         <!--Seção com os mitos e verdades mais difundidos-->
+
         <div id="mitos">
           <div id="intro_mitos">
             <h1>Mitos e verdades relacionados a saúde</h1>
@@ -491,8 +501,10 @@
       </section>
 
       <section id="contato">
+
         <!--Seção com a área de contato do site-->
-        <form action="enviar">
+
+        <form>
           <h2>
             Tem alguma dúvida, deseja corrigir uma informação do site ou relatar
             um problema? Entre em contato!
@@ -502,7 +514,7 @@
           <label for="Email">Email:</label>
           <input type="email" id="email" required placeholder="Email" />
           <label for="Requisição">Motivo:</label>
-          <select id="Requisição">
+          <select id="requisicao">
             <option value="Nenhuma das opções">Nenhuma das opções</option>
             <option value="Dúvida">Dúvida</option>
             <option value="Correção">Correção</option>
@@ -513,16 +525,22 @@
           </select>
           <label for="Descrição">Descreva o seu problema!</label>
           <textarea
-            id="Descrição"
+            id="descricao"
             placeholder="Descreva o motivo da sua solicitação!"
           ></textarea>
-          <button type="submit">Enviar</button>
+          <button type="button" onclick="exibirElementos()">Enviar</button>
+          <button type="button" onclick="resetar()">Limpar</button>
+
+          <div id="resultForm"></div>
+
         </form>
       </section>
     </main>
 
     <footer>
+
       <!--Rodapé do site-->
+
       <div id="redes_foot">
         <a href="instagram.com" target="_blank">
           <img
@@ -558,5 +576,6 @@
 
       <p>&copy; 2024 Saúde e bem estar. Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
