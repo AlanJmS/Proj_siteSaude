@@ -17,7 +17,7 @@ function exibirElementos() {
   console.log(arrayForm);
 
   if (
-    nomeForm === "" ||
+    nomeForm === "" ||  
     emailForm === "" ||
     requisicaoForm === "" ||
     descricaoForm === ""
@@ -27,11 +27,11 @@ function exibirElementos() {
   
   else {
     resultadoForm.innerHTML = ` 
-    <h2><strong> Requisição enviada com sucesso!</h2>
-    <p><strong>Nome:</strong> "${dadosForm.Nome}"</p>
-    <p><strong>Email:</strong> "${dadosForm.Email}"</p>
-    <p><strong>Requisição:</strong> "${dadosForm.Requisicao}"</p>
-    <p><strong>Descrição:</strong> "${dadosForm.Descricao}"</p>`;
+    <h2>Requisição enviada com sucesso!</h2>
+    <p>Nome:</strong> "${dadosForm.Nome}"</p>
+    <p>Email:</strong> "${dadosForm.Email}"</p>
+    <p>Requisição:</strong> "${dadosForm.Requisicao}"</p>
+    <p>Descrição:</strong> "${dadosForm.Descricao}"</p>`;
   }
 
 }
