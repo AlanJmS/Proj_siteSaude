@@ -5,29 +5,6 @@
     scroll-behavior: smooth;
   }
 
-  .page-enter {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  
-  .page-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  .page-exit {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .page-exit-active {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s, transform 0.5s;
-  }
-  
-  
   header {
     position: sticky;
     top: 0;
@@ -230,7 +207,7 @@
   
   #saudeMental {
     display: flex;
-    margin-top: 40px;
+    margin-top: 10px;
     justify-content: space-between;
     align-items: center;
   }
@@ -253,7 +230,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
     padding-bottom: 20px;
     margin-top: 20px;
   }

@@ -17,7 +17,6 @@ function Header() {
         </div>
         <div id="div-links">
           <Link className="link" to="/">Início</Link>
-          <Link className="link" to="#textos-introd">Dicas sobre saúde</Link>
           <Link className="link" to="/saude-mental">Saúde mental</Link>
           <Link className="link" to="/mitos-verdades">Mitos e verdades</Link>
           <Link className="link" to="/contato">Contato</Link>
